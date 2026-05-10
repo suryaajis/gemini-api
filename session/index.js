@@ -2,7 +2,6 @@ import "dotenv/config";
 import express from "express";
 import multer from "multer";
 import { GoogleGenAI } from "@google/genai";
-import multer from "multer";
 
 const app = express();
 const upload = multer();
