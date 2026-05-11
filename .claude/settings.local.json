@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"D:\\\\Surya\\\\Coding\\\\gemini-api\\\\final-project\" -Recurse | Where-Object { !$_.PSIsContainer } | Select-Object FullName)",
+      "PowerShell(Get-ChildItem \"D:\\\\Surya\\\\Coding\\\\gemini-api\\\\final-project\" -Recurse | Where-Object { !$_.PSIsContainer -and $_.FullName -notmatch 'node_modules' } | Select-Object FullName)"
+    ]
+  }
+}
